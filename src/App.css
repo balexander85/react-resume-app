@@ -1,10 +1,29 @@
+body
+{
+  margin: auto;
+  width: 1024px;
+  background-image: url('../public/macfullscreenapbg.png');
+  font-family: "Times New Roman", ui-rounded;
+}
+
+ul
+{
+    list-style-type: square;
+}
+
+li
+{
+    margin-bottom : 1px;
+}
+
 .App {
-  text-align: center;
-  background-image: url("../public/macfullscreenapbg.png");
+  background-color: white;
+  border-radius: 20px;
+  padding: 12px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -15,14 +34,10 @@
 }
 
 .App-header {
-  /*background-color: #282c34;*/
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*font-size: calc(10px + 2vmin);*/
 }
 
 .App-link {
@@ -37,3 +52,105 @@
     transform: rotate(360deg);
   }
 }
+
+.contact-name
+{
+  /*font-size: calc(20px + 2vmin);*/
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-header {
+  font-family: "Courier New", ui-rounded;
+  color: #2B2B2B;
+  text-align:left;
+  font-size: 17px;
+  /*font-size: 1.17em;*/
+}
+
+.summary-text {
+  text-indent: 1em;
+  font-size: 14px;
+}
+
+.job-history {
+  font-size: 14px;
+}
+
+.job-entry {
+  font-size: 14px;
+}
+
+.date
+{
+  width: 450px;
+}
+
+.company
+{
+  color: #171717;
+  font-weight: bold;
+  width: 450px;
+}
+
+.institution {
+  color: #171717;
+  font-weight: bold;
+  width: 450px;
+}
+
+.job-location
+{
+  color: #171717;
+  width: 112px;
+}
+
+.job-title
+{
+  color: #1A1A1A;
+  font-weight: bold;
+}
+
+.education
+{
+    font-size: 14px;
+}
+
+.skills
+{
+    font-size: 14px;
+}
+
+.dates
+{
+  width: 450px;
+}
+
+#contact_info
+{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 14px;
+  /*border-style:dotted;
+  border-width:thin;*/
+}
+#contact_name
+{
+  /*color: blue;*/
+  font-size: 35px;
+}
+
+a{text-decoration:none;}
+/*a:link {color:#0000FF;}     /* unvisited link */
+/*a:visited {color:#3333CC;}  /* visited link */
+/*a:hover {color:#33AD33} /* mouse over link */
+/*a:active {color:#000000;}  /* selected link */
+.superscript { position: relative; top: -0.5em; font-size: 80%; }
+a:link {color:#171717;}     /* unvisited link */
+a:visited {color:#171717;}  /* visited link */
+a:hover {color:#33AD33;} /* mouse over link */
+a:active {color:#171717;}  /* selected link */
+
