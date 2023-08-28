@@ -11,7 +11,7 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ skillsList }) => {
     return (
-        <div className="skills">
+        <section className="skills">
             <h3 className="section-header">SKILLS</h3>
             <hr />
             <div>
@@ -24,7 +24,7 @@ const Skills: React.FC<SkillsProps> = ({ skillsList }) => {
                 ))}
             </div>
             <br />
-        </div>
+        </section>
     );
 };
 

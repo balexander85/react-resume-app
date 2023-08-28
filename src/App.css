@@ -1,156 +1,118 @@
-body
-{
-  margin: auto;
-  width: 1024px;
-  background-image: url('../public/macfullscreenapbg.png');
-  font-family: "Times New Roman", ui-rounded;
+body {
+    margin: auto;
+    width: 1024px;
+    background-image: url('../public/macfullscreenapbg.png');
+    font-family: "Times New Roman", ui-rounded;
 }
 
-ul
-{
+ul {
     list-style-type: square;
 }
 
-li
-{
-    margin-bottom : 1px;
+li {
+    margin-bottom: 1px;
 }
 
 .App {
-  background-color: white;
-  border-radius: 20px;
-  padding: 12px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px;
 }
 
 .App-logo {
-  height: 10vmin;
-  pointer-events: none;
+    height: 10vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*font-size: calc(10px + 2vmin);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*font-size: calc(10px + 2vmin);*/
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.contact-name
-{
-  /*font-size: calc(20px + 2vmin);*/
-  font-size: 35px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.contact-name {
+    font-size: calc(27px + 2vmin);
+}
+
+.contact-info {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 14px;
 }
 
 .section-header {
-  font-family: "Courier New", ui-rounded;
-  color: #2B2B2B;
-  text-align:left;
-  font-size: 17px;
-  /*font-size: 1.17em;*/
+    font-family: "Courier New", ui-rounded;
+    color: #2B2B2B;
+    text-align: left;
+    font-size: 17px;
+    /*font-size: 1.17em;*/
 }
 
 .summary-text {
-  text-indent: 1em;
-  font-size: 14px;
+    text-indent: 1em;
+    font-size: 14px;
 }
 
 .job-history {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .job-entry {
-  font-size: 14px;
+    font-size: 14px;
 }
 
-.date
-{
-  width: 450px;
+.date {
+    width: 450px;
 }
 
-.company
-{
-  color: #171717;
-  font-weight: bold;
-  width: 450px;
+.company {
+    color: #171717;
+    font-weight: bold;
+    width: 450px;
 }
 
 .institution {
-  color: #171717;
-  font-weight: bold;
-  width: 450px;
+    color: #171717;
+    font-weight: bold;
+    width: 450px;
 }
 
-.job-location
-{
-  color: #171717;
-  width: 112px;
+.job-location {
+    color: #171717;
+    width: 112px;
 }
 
-.job-title
-{
-  color: #1A1A1A;
-  font-weight: bold;
+.job-title {
+    color: #1A1A1A;
+    font-weight: bold;
 }
 
-.education
-{
+.education {
     font-size: 14px;
 }
 
-.skills
-{
+.skills {
     font-size: 14px;
 }
-
-.dates
-{
-  width: 450px;
-}
-
-#contact_info
-{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 14px;
-  /*border-style:dotted;
-  border-width:thin;*/
-}
-#contact_name
-{
-  /*color: blue;*/
-  font-size: 35px;
-}
-
-a{text-decoration:none;}
-/*a:link {color:#0000FF;}     /* unvisited link */
-/*a:visited {color:#3333CC;}  /* visited link */
-/*a:hover {color:#33AD33} /* mouse over link */
-/*a:active {color:#000000;}  /* selected link */
-.superscript { position: relative; top: -0.5em; font-size: 80%; }
-a:link {color:#171717;}     /* unvisited link */
-a:visited {color:#171717;}  /* visited link */
-a:hover {color:#33AD33;} /* mouse over link */
-a:active {color:#171717;}  /* selected link */
 

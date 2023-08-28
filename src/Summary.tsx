@@ -6,7 +6,8 @@ interface SummaryProps {
 
 const Summary: React.FC<SummaryProps> = ({ summaryList }) => {
     return (
-        <div>
+        <section>
+            <br />
             <h3 className="section-header">SUMMARY</h3>
             <hr />
             <div className="summary-text">
@@ -14,7 +15,8 @@ const Summary: React.FC<SummaryProps> = ({ summaryList }) => {
                 <p key={index} >{summaryText}</p>
             ))}
             </div>
-        </div>
+            <br />
+        </section>
     );
 };
 

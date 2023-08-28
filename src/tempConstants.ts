@@ -1,5 +1,11 @@
 
 
+export const contactInfo = {
+    name: "Brian Alexander",
+    linkedIn: "https://www.linkedin.com/pub/brian-alexander/26/a63/962",
+    location: "Austin, TX"
+}
+
 export const summaryText = [
     'I am a QA Engineer with almost five years of experience in manual and automated testing. I am part of a QA team that tests a wide variety of web applications but I focus primarily on testing integrations with restaurant point-of-sale systems and creating automated tests for the company\'s API services. I also contribute to the QA team by providing app deployments to test servers and if necessary changing configurations for test servers (Linux). ',
     'Taught myself to program using various languages but Python is my most proficient and beloved. Not only do I enjoy programming for work, I love programming outside of work too. I spend my free time finding ways of automating my life and learning more about technology. I am looking for an environment that permits me to utilize my skills, while allowing me to learn new skills and grow professionally as an Automated QA Software Engineer.'

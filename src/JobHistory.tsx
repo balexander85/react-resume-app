@@ -14,7 +14,7 @@ interface JobHistoryProps {
 
 const JobHistory: React.FC<JobHistoryProps> = ({ jobs }) => {
     return (
-        <div className="job-history">
+        <section className="job-history">
             <h3 className="section-header">EXPERIENCE</h3>
             <hr />
                 {jobs.map((job, index) => (
@@ -37,7 +37,7 @@ const JobHistory: React.FC<JobHistoryProps> = ({ jobs }) => {
                         <br />
                     </div>
                 ))}
-        </div>
+        </section>
     );
 };
 

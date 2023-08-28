@@ -13,7 +13,7 @@ interface EducationProps {
 
 const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
     return (
-        <div className="education">
+        <section className="education">
             <h3 className="section-header">EDUCATION</h3>
             <hr />
             <table>
@@ -21,7 +21,7 @@ const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
                     {educationList.map((education, index) => (
                         <div>
                             <tr key={index}>
-                                <td className="dates">{education.date}</td>
+                                <td className="date">{education.date}</td>
                                 <td className="institution">{education.institution}</td>
                                 <td className="job-location">{education.location}</td>
                             </tr>
@@ -33,7 +33,7 @@ const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
                 </tbody>
             </table>
             <br />
-        </div>
+        </section>
     );
 };
 
