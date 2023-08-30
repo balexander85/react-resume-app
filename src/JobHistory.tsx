@@ -17,26 +17,21 @@ const JobHistory: React.FC<JobHistoryProps> = ({ jobs }) => {
         <section className="job-history">
             <h3 className="section-header">EXPERIENCE</h3>
             <hr />
-                {jobs.map((job, index) => (
-                    <div key={index}>
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td className="date">{job.date}</td>
-                                <td className="company">{job.company}</td>
-                                <td className="job-location">{job.location}</td>
-                            </tr>
-                            <tr><td className="job-title">{job.title}</td></tr>
-                            </tbody>
-                        </table>
-                        <ul className="description-list">
-                        {job.descriptionList.map((description, index) => (
-                            <li className="description">{description}</li>
-                        ))}
-                        </ul>
-                        <br />
+            {jobs.map((job, index) => (
+                <div key={index} className="job-entry">
+                    <div className="job-header">
+                        <p className="dates">{job.date}</p>
+                        <p className="company bold">{job.company}</p>
+                        <p className="job-location">{job.location}</p>
                     </div>
-                ))}
+                    <p className="job-title bold">{job.title}</p>
+                    <ul className="description-list">
+                        {job.descriptionList.map((description, index) => (
+                            <li key={index} className="description">{description}</li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
         </section>
     );
 };

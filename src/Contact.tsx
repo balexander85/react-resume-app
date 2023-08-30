@@ -12,7 +12,7 @@ interface ContactProps {
 const ContactSX: React.FC<ContactProps> = ({ contact }) => {
     return (
         <section>
-            <table id="contact_info" className="contact-info">
+            <table className="contact-info">
                 <tbody>
                 <tr>
                     <td className="contact-name">{contact.name}</td>

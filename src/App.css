@@ -3,14 +3,16 @@ body {
     width: 1024px;
     background-image: url('../public/macfullscreenapbg.png');
     font-family: "Times New Roman", ui-rounded;
+    font-size: 14px;
+    color: #1A1A1A;
 }
 
 ul {
     list-style-type: square;
 }
 
-li {
-    margin-bottom: 1px;
+.bold {
+    font-weight: bold;
 }
 
 .App {
@@ -34,7 +36,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*font-size: calc(10px + 2vmin);*/
 }
 
 .App-link {
@@ -58,61 +59,49 @@ li {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 14px;
 }
 
 .section-header {
     font-family: "Courier New", ui-rounded;
-    color: #2B2B2B;
-    text-align: left;
-    font-size: 17px;
-    /*font-size: 1.17em;*/
+    font-size: 1.17em;
 }
 
 .summary-text {
     text-indent: 1em;
-    font-size: 14px;
 }
 
-.job-history {
-    font-size: 14px;
+
+.education-entry {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+.dates,
+.institution,
+.job-location,
+.job-title,
+.company,
+.degree {
+    margin: 0;
 }
 
 .job-entry {
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Adjust as needed */
 }
 
-.date {
-    width: 450px;
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; /* Adjust as needed */
 }
-
-.company {
-    color: #171717;
-    font-weight: bold;
-    width: 450px;
-}
-
-.institution {
-    color: #171717;
-    font-weight: bold;
-    width: 450px;
-}
-
-.job-location {
-    color: #171717;
-    width: 112px;
-}
-
-.job-title {
-    color: #1A1A1A;
-    font-weight: bold;
-}
-
-.education {
-    font-size: 14px;
-}
-
-.skills {
-    font-size: 14px;
-}
-
