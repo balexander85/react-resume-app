@@ -21,34 +21,8 @@ ul {
     padding: 12px;
 }
 
-.App-logo {
-    height: 10vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .App-link {
     color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 .contact-name {
@@ -56,8 +30,6 @@ ul {
 }
 
 .contact-info {
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
 
@@ -69,7 +41,6 @@ ul {
 .summary-text {
     text-indent: 1em;
 }
-
 
 .education-entry {
     display: flex;

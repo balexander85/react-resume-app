@@ -11,24 +11,14 @@ interface ContactProps {
 
 const ContactSX: React.FC<ContactProps> = ({ contact }) => {
     return (
-        <section>
-            <table className="contact-info">
-                <tbody>
-                <tr>
-                    <td className="contact-name">{contact.name}</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>{contact.location}</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href={contact.linkedIn} target="_blank" rel="noreferrer">LinkedIn</a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+        <section className="contact-info">
+            <div className="contact-name">{contact.name}</div>
+            <div className="contact-location">{contact.location}</div>
+            <div className="contact-linkedin">
+                <a href={contact.linkedIn} target="_blank" rel="noreferrer">
+                    LinkedIn
+                </a>
+            </div>
         </section>
     );
 };
