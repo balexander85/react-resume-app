@@ -15,13 +15,20 @@ const Skills: React.FC<SkillsProps> = ({ skillsList }) => {
             <h3 className="section-header">SKILLS</h3>
             <hr />
             <div>
-                {skillsList.map((skill, index) => (
+                {skillsList.length > 0 ? (
+                    skillsList.map((skill, index) => (
                     <div key={index}>
                         <p className="proficiency">
                             <strong>{skill.type}:</strong> {skill.items}
                         </p>
                     </div>
-                ))}
+                ))) : (
+                    <div>
+                        <p className="proficiency">
+                            <strong>Type of Skill:</strong> List of skills...
+                        </p>
+                    </div>
+                )}
             </div>
             <br />
         </section>

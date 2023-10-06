@@ -16,7 +16,8 @@ const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
         <section className="education">
             <h3 className="section-header">EDUCATION</h3>
             <hr />
-            {educationList.map((education, index) => (
+            {educationList.length > 0 ? (
+                educationList.map((education, index) => (
                 <div key={index} className="education-entry">
                     <div className="education-header">
                         <p className="dates">{education.date}</p>
@@ -25,7 +26,17 @@ const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
                     </div>
                     <p className="degree bold">{education.degree}</p>
                 </div>
-            ))}
+            ))) : (
+                <div className="education-entry">
+                    <div className="education-header">
+                        <p className="dates">Month YYYY - Month YYYY</p>
+                        <p className="institution bold">Institution Name</p>
+                        <p className="job-location">Institution Location</p>
+                    </div>
+                    <p className="degree bold">Degree or Certificate Name</p>
+                </div>
+            )
+            }
             <br />
         </section>
     );
