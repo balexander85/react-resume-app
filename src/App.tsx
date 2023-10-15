@@ -3,14 +3,14 @@ import './App.css';
 import Summary from './Summary';
 import JobHistory from './JobHistory';
 import EducationSX from './Education';
-import Skills from "./Skills";
+import Skills from './Skills';
 import candidate from './candidate.json';
-import ContactSX from "./Contact";
+import ContactHeader from './Contact';
 
 function App() {
   return (
-    <div className="App">
-      <ContactSX contact={candidate.contact} />
+    <div className='App'>
+      <ContactHeader contact={candidate.contact} />
       <Summary summaryList={candidate.summary} />
       <JobHistory jobs={candidate.history} />
       <EducationSX educationList={candidate.education} />

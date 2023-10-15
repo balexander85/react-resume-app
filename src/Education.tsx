@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeader from './SectionHeader';
 
 interface Education {
     degree: string;
@@ -13,31 +14,28 @@ interface EducationProps {
 
 const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
     return (
-        <section className="education">
-            <h3 className="section-header">EDUCATION</h3>
-            <hr />
+        <section className='education'>
+            <SectionHeader name={'EDUCATION'} />
             {educationList.length > 0 ? (
                 educationList.map((education, index) => (
-                <div key={index} className="education-entry">
-                    <div className="education-header">
-                        <p className="dates">{education.date}</p>
-                        <p className="institution bold">{education.institution}</p>
-                        <p className="job-location">{education.location}</p>
+                <div key={index}>
+                    <div className='education-header'>
+                        <p>{education.date}</p>
+                        <p className='bold'>{education.institution}</p>
+                        <p>{education.location}</p>
                     </div>
-                    <p className="degree bold">{education.degree}</p>
+                    <p className='bold'>{education.degree}</p>
                 </div>
             ))) : (
-                <div className="education-entry">
-                    <div className="education-header">
-                        <p className="dates">Month YYYY - Month YYYY</p>
-                        <p className="institution bold">Institution Name</p>
-                        <p className="job-location">Institution Location</p>
+                <div>
+                    <div className='education-header'>
+                        <p>Month YYYY - Month YYYY</p>
+                        <p className='bold'>Institution Name</p>
+                        <p>Institution Location</p>
                     </div>
-                    <p className="degree bold">Degree or Certificate Name</p>
+                    <p className='bold'>Degree or Certificate Name</p>
                 </div>
-            )
-            }
-            <br />
+            )}
         </section>
     );
 };

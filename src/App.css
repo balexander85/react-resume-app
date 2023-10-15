@@ -2,7 +2,6 @@ body {
     width: 100%;
     max-width: 100%;
     background-image: url('../public/macfullscreenapbg.png');
-    font-family: "Times New Roman", ui-rounded;
 }
 
 ul {
@@ -22,16 +21,16 @@ ul {
     max-width: 75%;
 }
 
-.contact-name {
-    font-size: calc(27px + 2vmin);
-}
-
 .contact-info {
     text-align: center;
 }
 
+.contact-name {
+    font-size: calc(27px + 2vmin);
+}
+
 .section-header {
-    font-family: "Courier New", ui-rounded;
+    font-family: 'Courier New', ui-rounded;
     font-size: 1.17em;
 }
 
@@ -39,38 +38,32 @@ ul {
     text-indent: 1em;
 }
 
-.education-entry {
+.education {
+    display: flex;
     flex-direction: column;
-    margin-bottom: 20px; /* Adjust as needed */
 }
 
 .education-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px; /* Adjust as needed */
 }
 
 .job-entry {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; /* Adjust as needed */
 }
 
 .job-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px; /* Adjust as needed */
 }
-
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
     /* Adjust the styles for smaller screens */
     .App {
-        width: 80%;
-        max-width: 80%;
+        width: 85%;
+        max-width: 85%;
     }
 
     .contact-name {

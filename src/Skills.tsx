@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeader from './SectionHeader';
 
 interface Skill {
     type: string;
@@ -11,26 +12,27 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ skillsList }) => {
     return (
-        <section className="skills">
-            <h3 className="section-header">SKILLS</h3>
-            <hr />
+        <section>
+            <SectionHeader name={'SKILLS'} />
             <div>
                 {skillsList.length > 0 ? (
                     skillsList.map((skill, index) => (
                     <div key={index}>
-                        <p className="proficiency">
-                            <strong>{skill.type}:</strong> {skill.items}
+                        <p>
+                            <b>{skill.type}:</b> {skill.items}
                         </p>
                     </div>
                 ))) : (
                     <div>
-                        <p className="proficiency">
-                            <strong>Type of Skill:</strong> List of skills...
+                        <p>
+                            <b>Type of skill:</b> List of skills...
+                        </p>
+                        <p>
+                            <b>Other type of skill:</b> List of skills...
                         </p>
                     </div>
                 )}
             </div>
-            <br />
         </section>
     );
 };

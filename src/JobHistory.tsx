@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeader from './SectionHeader';
 
 interface Job {
     title: string;
@@ -14,21 +15,20 @@ interface JobHistoryProps {
 
 const JobHistory: React.FC<JobHistoryProps> = ({ jobs }) => {
     return (
-        <section className="job-history">
-            <h3 className="section-header">EXPERIENCE</h3>
-            <hr />
+        <section>
+            <SectionHeader name={'EXPERIENCE'} />
             {jobs.length > 0 ? (
                 jobs.map((job, index) => (
-                    <div key={index} className="job-entry">
-                        <div className="job-header">
-                            <p className="dates">{job.date}</p>
-                            <p className="company bold">{job.company}</p>
-                            <p className="job-location">{job.location}</p>
+                    <div key={index} className='job-entry'>
+                        <div className='job-header'>
+                            <p>{job.date}</p>
+                            <p className='bold'>{job.company}</p>
+                            <p>{job.location}</p>
                         </div>
-                        <p className="job-title bold">{job.title}</p>
-                        <ul className="description-list">
+                        <p className='bold'>{job.title}</p>
+                        <ul>
                             {job.descriptionList.map((description, index) => (
-                                <li key={index} className="description">{description}</li>
+                                <li key={index}>{description}</li>
                             ))}
                         </ul>
                     </div>))
@@ -38,15 +38,15 @@ const JobHistory: React.FC<JobHistoryProps> = ({ jobs }) => {
                         Array.from({ length: 3 }).map((_, index) => (
                         <div className="job-entry">
                             <div className="job-header">
-                                <p className="dates">Month YYYY - Month YYYY</p>
-                                <p className="company bold">Company Name</p>
-                                <p className="job-location">Job Location</p>
+                                <p>Month YYYY - Month YYYY</p>
+                                <p className="bold">Company Name</p>
+                                <p>Job Location</p>
                             </div>
-                            <p className="job-title bold">Default Job Title</p>
-                            <ul className="description-list">
-                                <li className="description">Veniam raclette butcher readymade before they sold out DIY.</li>
+                            <p className="bold">Default Job Title</p>
+                            <ul>
+                                <li>Veniam raclette butcher readymade before they sold out DIY.</li>
                                 <li>Pickled edison bulb four dollar toast, humblebrag hella 8-bit sint Brooklyn in DSA food truck.</li>
-                                <li className="description">Banh mi whatever mollit laboris man braid fam, praxis squid gastropub succulents schlitz williamsburg XOXO fit sriracha.</li>
+                                <li>Banh mi whatever mollit laboris man braid fam, praxis squid gastropub succulents schlitz williamsburg XOXO fit sriracha.</li>
                             </ul>
                         </div>
                         ))
