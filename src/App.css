@@ -1,10 +1,8 @@
 body {
-    margin: auto;
-    width: 1024px;
+    width: 100%;
+    max-width: 100%;
     background-image: url('../public/macfullscreenapbg.png');
     font-family: "Times New Roman", ui-rounded;
-    font-size: 14px;
-    color: #1A1A1A;
 }
 
 ul {
@@ -16,13 +14,12 @@ ul {
 }
 
 .App {
+    margin: auto;
     background-color: white;
     border-radius: 20px;
     padding: 12px;
-}
-
-.App-link {
-    color: #61dafb;
+    width: 75%;
+    max-width: 75%;
 }
 
 .contact-name {
@@ -43,7 +40,6 @@ ul {
 }
 
 .education-entry {
-    display: flex;
     flex-direction: column;
     margin-bottom: 20px; /* Adjust as needed */
 }
@@ -53,15 +49,6 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px; /* Adjust as needed */
-}
-
-.dates,
-.institution,
-.job-location,
-.job-title,
-.company,
-.degree {
-    margin: 0;
 }
 
 .job-entry {
@@ -75,4 +62,22 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px; /* Adjust as needed */
+}
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Adjust the styles for smaller screens */
+    .App {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .contact-name {
+        font-size: calc(40px + 2vmin);
+    }
+
+    .contact-location {
+        font-size: 1.5rem;
+    }
 }
