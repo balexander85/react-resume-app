@@ -10,8 +10,8 @@ interface ContactProps {
     contact: Contact;
 }
 
-const defaultName = 'Default Name';
-const defaultLocation = 'Default Location';
+export const defaultName = 'Default Name';
+export const defaultLocation = 'Default Location';
 
 const ContactHeader: React.FC<ContactProps> = ({ contact }) => {
     const contactName = contact.name ? contact.name : defaultName;
