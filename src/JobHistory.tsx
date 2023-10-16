@@ -36,7 +36,7 @@ const JobHistory: React.FC<JobHistoryProps> = ({ jobs }) => {
                 <>
                     {
                         Array.from({ length: 3 }).map((_, index) => (
-                        <div className="job-entry">
+                        <div key={index} className="job-entry">
                             <div className="job-header">
                                 <p>Month YYYY - Month YYYY</p>
                                 <p className="bold">Company Name</p>
