@@ -1,9 +1,9 @@
-import candidate from './candidate.json';
+import candidate from '../../candidate.json';
 import ContactHeader, { defaultName } from './Contact';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import App from './App';
-import { titleTextDefaultLinkedIn } from './constants';
+import App from '../../App';
+import { titleTextDefaultLinkedIn } from '../../constants';
 
 test('renders contact name in app', () => {
   const contactName = candidate.contact.name ? candidate.contact.name : defaultName;

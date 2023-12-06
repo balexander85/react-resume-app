@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Summary from './Summary';
-import JobHistory from './JobHistory';
-import EducationSX from './Education';
-import Skills from './Skills';
+import Summary from './components/summary/Summary';
+import JobHistory from './components/jobhistory/JobHistory';
+import EducationSX from './components/education/Education';
+import Skills from './components/skills/Skills';
 import candidate from './candidate.json';
-import ContactHeader from './Contact';
+import ContactHeader from './components/contact/Contact';
 
 function App() {
   return (
