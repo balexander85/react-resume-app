@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import Education from './Education';
-import exp from 'constants';
 
 test('education renders', () => {
   const educationList = [{
