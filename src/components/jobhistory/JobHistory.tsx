@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionHeader from './SectionHeader';
+import SectionHeader from '../SectionHeader';
 
 interface Job {
     title: string;

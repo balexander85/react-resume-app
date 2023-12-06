@@ -1,5 +1,5 @@
 import React from 'react';
-import { titleTextDefaultLinkedIn } from './constants';
+import { titleTextDefaultLinkedIn } from '../../constants';
 
 interface Contact {
     name: string
