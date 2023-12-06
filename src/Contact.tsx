@@ -24,10 +24,10 @@ const ContactHeader: React.FC<ContactProps> = ({ contact }) => {
             {contact.linkedIn &&
                 (<div>
                         <a href={contact.linkedIn} target='_blank' rel='noreferrer'
-                           title={contact.linkedIn === 'https://www.linkedin.com/' ?
+                           title={contact.linkedIn === 'https://www.linkedin.com' ?
                                "To customize your LinkedIn link, you can either update the 'linkedin' entry " +
                                "in the candidate.json file with your actual LinkedIn profile URL or remove " +
-                               "the default 'https://www.linkedin.com/' value from the 'linkedin' entry to " +
+                               "the default 'https://www.linkedin.com' value from the 'linkedin' entry to " +
                                "remove the LinkedIn link." : ''}
                         >
                             LinkedIn
