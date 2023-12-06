@@ -11,4 +11,4 @@ RUN npm install \
 # Expose the port your app will run on (typically 3000)
 EXPOSE 3000
 # Define the command to run your app
-CMD ["npm", "start"]
+CMD ["npm", "start", "--host 0.0.0.0"]
