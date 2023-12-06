@@ -15,7 +15,7 @@ interface EducationProps {
 const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
   return (
     <section className='education'>
-      <SectionHeader name={'EDUCATION'} />
+      <SectionHeader name='education' />
       {educationList.length > 0 ? (
         educationList.map((education, index) => (
           <div key={index}>
