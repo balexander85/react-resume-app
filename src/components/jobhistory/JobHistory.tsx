@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionHeader from '../SectionHeader';
 
-interface Job {
+export interface Job {
     title: string;
     company: string;
     date: string;
