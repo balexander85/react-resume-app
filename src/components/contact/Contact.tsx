@@ -19,8 +19,8 @@ const ContactHeader: React.FC<ContactProps> = ({ contact }) => {
   const contactLocation = contact.location ? contact.location : defaultLocation;
   document.title = `${contactName} | ${contactLocation}`;
   return (
-    <section className='contact-info'>
-      <div className='contact-name'>{contactName}</div>
+    <header className='contact-info'>
+      <h1 className='contact-name'>{contactName}</h1>
       <div className='contact-location'>{contactLocation}</div>
       {contact.linkedIn &&
                 (<div>
@@ -31,7 +31,7 @@ const ContactHeader: React.FC<ContactProps> = ({ contact }) => {
                   </a>
                 </div>
                 )}
-    </section>
+    </header>
   );
 };
 

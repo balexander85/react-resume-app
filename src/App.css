@@ -4,6 +4,15 @@ body {
     background-image: url('../public/macfullscreenapbg.png');
 }
 
+hr {
+    display: block;
+    height: 1px;
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-top: solid 1px #aaa;
+}
+
 ul {
     list-style-type: square;
 }
@@ -23,6 +32,9 @@ ul {
 
 .contact-info {
     text-align: center;
+    height: 85%;
+    background: white;
+    border-bottom: none;
 }
 
 .contact-name {

@@ -9,13 +9,13 @@ import ContactHeader from './components/contact/Contact';
 
 function App() {
   return (
-    <div className='App'>
+    <main className='App'>
       <ContactHeader contact={candidate.contact} />
       <Summary summaryList={candidate.summary} />
       <JobHistory jobs={candidate.history} />
       <EducationSX educationList={candidate.education} />
       <Skills skillsList={candidate.skills} />
-    </div>
+    </main>
   );
 }
 
