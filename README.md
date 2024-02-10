@@ -1,66 +1,57 @@
 # react-resume-app
 
-Creating my resume with React and Typescript
-
-Example Site: https://balexander85.github.io/react-resume-app
+Welcome to the react-resume-app! This application is designed to showcase your resume in a clean and professional format using React. [Example Site](https://balexander85.github.io/react-resume-app)
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Prerequisites
+Before you start, ensure you have the following installed on your machine:
 
-In the project directory, you can run:
+* Node.js
+* npm (Node Package Manager)
 
-### `npm start`
+## Setup
+Follow these steps to set up and run the react-resume-app on your local machine:
+1. **Clone the Repository**:
+   ```shell
+   git clone https://github.com/balexander85/react-resume-app.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```shell
+    cd react-resume-app
+   ```
+3. **Install Dependencies**:
+   ```shell
+    npm install
+   ```
+4. **Update candidate.json**:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   Open the public/data/candidate.json file and update it with your personal details, including your name, location, LinkedIn profile, and other relevant information.
+   ```
+   {
+    "name": "Your Name",
+    "location": "Your Location",
+    "linkedIn": "https://www.linkedin.com/in/your-profile",
+     // other details...
+    }
+   ``` 
+5. **Run the Application**:
+   ```shell
+   npm start
+   ```
+   This will start the development server, and you can view the app in your browser at http://localhost:3000.
+6. **View Your Resume**:
+   Open your browser and navigate to http://localhost:3000 to view your resume. The application automatically updates as you make changes to the candidate.json file.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Customization
+Feel free to customize the resume content, styling, or add additional sections. Explore the project structure and update components as needed.
 
-### `npm test`
+## Deployment
+When you are ready to deploy your resume, follow the deployment guidelines based on your preferred hosting platform.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more
-information.
+* [Setting up React App on EC2 Instance in AWS](https://github.com/balexander85/programming-notes/tree/main/aws/ec2)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run lint`
-
-This command is used to analyze your project's source code for potential issues, styling errors, and violations of
-coding standards. It runs a linter on your codebase, which is a static code analysis tool that checks your code against
-a set of predefined rules.
-
-Linting helps ensure code quality, maintainability, and consistency within your project. It can identify problems such
-as syntax errors, unused variables, and inconsistent formatting, making it an essential tool for maintaining a clean and
-error-free codebase.
-
-Running `npm run lint` will initiate the linting process and display a list of any issues found in your code. Linting
-results can be accessed in the terminal or saved to a report file, depending on your project's configuration.
-
-By addressing the issues highlighted during linting, you can enhance the quality of your code and reduce the likelihood
-of introducing bugs and errors into your project. It's a recommended step in your development workflow to ensure a high
-level of code consistency and maintainability.
-
-After running `npm run lint`, review the reported issues, and make the necessary code adjustments to resolve them.
-
-### `npm run lint:fix`
-
-In addition to running the linting process, this command also attempts to automatically fix some of the detected issues.
-It is especially helpful for resolving minor code style and formatting problems. Running `npm run lint:fix` can be part
-of your regular code cleanup and improvement routine.
-
-Keep in mind that while `npm run lint:fix` can automatically correct certain issues, it might not address all potential
-problems. Manual review and adjustments may still be required for some issues that cannot be auto-fixed.
+Enjoy showcasing your professional resume with react-resume-app!
 
 ## Learn More
 

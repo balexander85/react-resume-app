@@ -5,12 +5,9 @@ body {
 }
 
 hr {
-    display: block;
-    height: 1px;
+    border-top: solid 1px #aaaaaa !important;
     background: transparent;
     width: 100%;
-    border: none;
-    border-top: solid 1px #aaa;
 }
 
 ul {
