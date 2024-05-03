@@ -5,7 +5,8 @@ import Summary from './Summary';
 test('summary component renders with provided summary text', () => {
   const summaryList = [
     'Veniam raclette butcher readymade before they sold out DIY.',
-    'Banh mi whatever mollit laboris man braid fam, praxis squid gastropub succulents schlitz williamsburg XOXO fit sriracha.',
+    'Banh mi whatever mollit laboris man braid fam, praxis squid ' +
+    'gastropub succulents schlitz williamsburg XOXO fit sriracha.',
   ];
   render(<Summary summaryList={summaryList} />);
 

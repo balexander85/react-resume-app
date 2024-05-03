@@ -6,7 +6,7 @@ export interface Job {
     company: string;
     date: string;
     location: string;
-    descriptionList: string[];
+    descriptionList?: string[];
 }
 
 interface JobHistoryProps {
@@ -27,7 +27,7 @@ const JobHistory: React.FC<JobHistoryProps> = ({ jobs }) => {
             </div>
             <p className='bold'>{job.title}</p>
             <ul>
-              {job.descriptionList.map((description, index) => (
+              {job.descriptionList && job.descriptionList.map((description, index) => (
                 <li key={index}>{description}</li>
               ))}
             </ul>
