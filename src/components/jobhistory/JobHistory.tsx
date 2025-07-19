@@ -26,10 +26,14 @@ const JobHistory: React.FC<JobHistoryProps> = ({ jobs }) => {
               <p>{job.location}</p>
             </div>
             <p className='bold'>{job.title}</p>
+            {job.descriptionList && job.descriptionList.length == 1 && (
+              <div style={{ marginLeft: '10px', marginRight: '10px' }}>{job.descriptionList[0]}</div>
+            )}
             <ul>
-              {job.descriptionList && job.descriptionList.map((description, index) => (
-                <li key={index}>{description}</li>
-              ))}
+              {job.descriptionList && job.descriptionList.length > 1 &&
+                job.descriptionList.map((description, index) => (
+                  <li key={index}>{description}</li>
+                ))}
             </ul>
           </div>))
       ) : (
