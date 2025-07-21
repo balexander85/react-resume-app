@@ -1,6 +1,6 @@
 # react-resume-app
 
-Welcome to the react-resume-app! This application is designed to showcase your resume in a clean and professional format using React. [Example Site](https://balexander85.github.io/react-resume-app)
+Welcome to the react-resume-app! This application is designed to showcase your résumé in a clean and professional format using React. [Example Site](https://balexander85.github.io/react-resume-app)
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,29 +29,34 @@ Follow these steps to set up and run the react-resume-app on your local machine:
    Open the public/data/candidate.json file and update it with your personal details, including your name, location, LinkedIn profile, and other relevant information.
    ```
    {
-    "name": "Your Name",
-    "location": "Your Location",
-    "linkedIn": "https://www.linkedin.com/in/your-profile",
-     // other details...
-    }
+      "contact": {
+      "name": "",
+      "linkedIn": "https://www.linkedin.com",
+      "location": ""
+      },
+      "summary": [],
+      "history": [],
+      "education": [],
+      "skills": []
+   }
    ``` 
 5. **Run the Application**:
    ```shell
    npm start
    ```
    This will start the development server, and you can view the app in your browser at http://localhost:3000.
-6. **View Your Resume**:
-   Open your browser and navigate to http://localhost:3000 to view your resume. The application automatically updates as you make changes to the candidate.json file.
+6. **View Your Résumé**:
+   Open your browser and navigate to http://localhost:3000 to view your résumé. The application automatically updates as you make changes to the candidate.json file.
 
 ## Customization
 Feel free to customize the resume content, styling, or add additional sections. Explore the project structure and update components as needed.
 
 ## Deployment
-When you are ready to deploy your resume, follow the deployment guidelines based on your preferred hosting platform.
+When you are ready to deploy your résumé, follow the deployment guidelines based on your preferred hosting platform.
 
 * [Setting up React App on EC2 Instance in AWS](https://github.com/balexander85/programming-notes/tree/main/aws/ec2)
 
-Enjoy showcasing your professional resume with react-resume-app!
+Enjoy showcasing your professional résumé with react-resume-app!
 
 ## Learn More
 
@@ -62,4 +67,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Sources
 
-* https://hipsum.co/ - for the default text as filler
+* https://hipsum.co/ for the default text as filler

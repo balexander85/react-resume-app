@@ -11,30 +11,30 @@ interface SkillsProps {
 }
 
 const Skills: React.FC<SkillsProps> = ({ skillsList }) => {
-  return (
-    <section>
-      <SectionHeader name={'SKILLS'} />
-      <div>
-        {skillsList.length > 0 ? (
-          skillsList.map((skill, index) => (
-            <div key={index}>
-              <p>
-                <b>{skill.type}:</b> {skill.items}
-              </p>
+    return (
+        <section>
+            <SectionHeader name={'SKILLS'} />
+            <div>
+                {skillsList.length > 0 ? (
+                    skillsList.map((skill, index) => (
+                        <div key={index}>
+                            <p>
+                                <b>{skill.type}:</b> {skill.items}
+                            </p>
+                        </div>
+                    ))) : (
+                    <div>
+                        <p>
+                            <b>Type of skill:</b> List of skills...
+                        </p>
+                        <p>
+                            <b>Other type of skill:</b> List of skills...
+                        </p>
+                    </div>
+                )}
             </div>
-          ))) : (
-          <div>
-            <p>
-              <b>Type of skill:</b> List of skills...
-            </p>
-            <p>
-              <b>Other type of skill:</b> List of skills...
-            </p>
-          </div>
-        )}
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default Skills;

@@ -8,15 +8,15 @@ import candidate from './candidate.json';
 import ContactHeader from './components/contact/Contact';
 
 function App() {
-  return (
-    <main className='App'>
-      <ContactHeader contact={candidate.contact} />
-      <Summary summaryList={candidate.summary} />
-      <JobHistory jobs={candidate.history} />
-      <EducationSX educationList={candidate.education} />
-      <Skills skillsList={candidate.skills} />
-    </main>
-  );
+    return (
+        <main className='App'>
+            <ContactHeader contact={candidate.contact} />
+            <Summary summaryList={candidate.summary} />
+            <JobHistory jobs={candidate.history} />
+            <EducationSX educationList={candidate.education} />
+            <Skills skillsList={candidate.skills} />
+        </main>
+    );
 }
 
 export default App;

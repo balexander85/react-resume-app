@@ -19,7 +19,7 @@
     ],
     "rules": {
         "quotes": ["error", "single"],
-        "indent": ["error", 2],
+        "indent": ["error", 4],
         "max-len": ["error", { "code": 120 }],
         "no-unused-vars": "error",
         // need to run for production only
