@@ -12,7 +12,7 @@ interface EducationProps {
     educationList: Education[];
 }
 
-const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
+const Education = ({ educationList } : EducationProps) => {
     return (
         <section className='education'>
             <SectionHeader name={'EDUCATION'} />
@@ -40,4 +40,4 @@ const EducationSX: React.FC<EducationProps> = ({ educationList }) => {
     );
 };
 
-export default EducationSX;
+export default Education;
