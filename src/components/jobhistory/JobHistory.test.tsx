@@ -3,33 +3,10 @@ import { render, screen } from '@testing-library/react';
 import JobHistory, { Job } from './JobHistory';
 
 describe('JobHistory component', () => {
-    test('renders section header', () => {
+    test('renders null for section header if no jobs', () => {
         render(<JobHistory jobs={[]} />);
-        const sectionHeader = screen.getByText(/experience/i);
-        expect(sectionHeader).toBeInTheDocument();
-    });
-
-    test('renders default job entry when no jobs are provided', () => {
-        const defaultJobCount = 3;
-        render(<JobHistory jobs={[]} />);
-
-        const defaultJobTitle = screen.getAllByText(/default job title/i)[0];
-        expect(defaultJobTitle).toBeInTheDocument();
-
-        // Adjust the following expectations based on your actual default content
-        const defaultDates = screen.getAllByText(/month yyyy - month yyyy/i);
-        const defaultCompanies = screen.getAllByText(/company name/i);
-        const defaultLocations = screen.getAllByText(/job location/i);
-
-        for (let index = 0; index < defaultJobCount; index++) {
-            const defaultDate = defaultDates[index];
-            const defaultCompany = defaultCompanies[index];
-            const defaultLocation = defaultLocations[index];
-
-            expect(defaultDate).toBeInTheDocument();
-            expect(defaultCompany).toBeInTheDocument();
-            expect(defaultLocation).toBeInTheDocument();
-        }
+        const sectionHeader = screen.queryByText(/experience/i);
+        expect(sectionHeader).toBe(null);
     });
 
     test('renders provided job entries', () => {

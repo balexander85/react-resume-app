@@ -5,7 +5,61 @@
     "location": ""
   },
   "summary": [],
-  "history": [],
+  "history": [
+    {
+      "title": "Default Job Title One",
+      "company": "Company Name",
+      "date": "Month YYYY - Month YYYY",
+      "location": "Job Location",
+      "descriptionList": [
+        "Veniam raclette butcher readymade before they sold out DIY.",
+        "Pickled edison bulb four dollar toast, 8-bit Brooklyn in DSA food truck.",
+        "Banh mi whatever laboris man braid fam, williamsburg XOXO fit sriracha."
+      ]
+    },
+    {
+      "title": "Default Job Title Two",
+      "company": "Company Name",
+      "date": "Month YYYY - Month YYYY",
+      "location": "Job Location",
+      "descriptionList": [
+        "Veniam raclette butcher readymade before they sold out DIY.",
+        "Pickled edison bulb four dollar toast, 8-bit Brooklyn in DSA food truck.",
+        "Banh mi whatever laboris man braid fam, williamsburg XOXO fit sriracha."
+      ]
+    },
+    {
+      "title": "Default Job Title One",
+      "company": "Company Name Two",
+      "date": "Month YYYY - Month YYYY",
+      "location": "Job Location",
+      "descriptionList": [
+        "Veniam raclette butcher readymade before they sold out DIY.",
+        "Pickled edison bulb four dollar toast, 8-bit Brooklyn in DSA food truck.",
+        "Banh mi whatever laboris man braid fam, williamsburg XOXO fit sriracha."
+      ]
+    },
+    {
+      "title": "Default Job Title One",
+      "company": "Company Name Three",
+      "date": "Month YYYY - Month YYYY",
+      "location": "Job Location",
+      "descriptionList": [
+        "Veniam raclette butcher readymade before they sold out DIY.",
+        "Pickled edison bulb four dollar toast, 8-bit Brooklyn in DSA food truck.",
+        "Banh mi whatever laboris man braid fam, williamsburg XOXO fit sriracha."
+      ]
+    }
+  ],
   "education": [],
-  "skills": []
+  "skills": [
+    {
+      "type": "Type of skill",
+      "items": "List of skills..."
+    },
+    {
+      "type": "Other type of skill",
+      "items": "List of skills..."
+    }
+  ]
 }

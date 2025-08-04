@@ -62,6 +62,11 @@ ul {
     flex-direction: column;
 }
 
+.job-entry-description {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .job-header {
     display: flex;
     justify-content: space-between;
