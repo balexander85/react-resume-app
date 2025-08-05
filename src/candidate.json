@@ -8,7 +8,7 @@
   "history": [
     {
       "title": "Default Job Title One",
-      "company": "Company Name",
+      "company": "Company Name One",
       "date": "Month YYYY - Month YYYY",
       "location": "Job Location",
       "descriptionList": [
@@ -19,7 +19,7 @@
     },
     {
       "title": "Default Job Title Two",
-      "company": "Company Name",
+      "company": "Company Name One",
       "date": "Month YYYY - Month YYYY",
       "location": "Job Location",
       "descriptionList": [
