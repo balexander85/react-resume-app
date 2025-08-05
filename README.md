@@ -31,7 +31,7 @@ Follow these steps to set up and run the react-resume-app on your local machine:
    {
       "contact": {
       "name": "",
-      "linkedIn": "https://www.linkedin.com",
+      "linkedIn": "",
       "location": ""
       },
       "summary": [],

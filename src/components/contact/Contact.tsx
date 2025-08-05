@@ -1,5 +1,4 @@
 import React from 'react';
-import { titleTextDefaultLinkedIn } from '../../constants';
 
 interface Contact {
     name: string
@@ -14,7 +13,7 @@ interface ContactProps {
 export const defaultName = 'Default Name';
 export const defaultLocation = 'Default Location';
 
-const ContactHeader: React.FC<ContactProps> = ({ contact }) => {
+const ContactHeader = ({ contact } : ContactProps) => {
     const contactName = contact.name ? contact.name : defaultName;
     const contactLocation = contact.location ? contact.location : defaultLocation;
     document.title = `${contactName} | ${contactLocation}`;
@@ -22,11 +21,9 @@ const ContactHeader: React.FC<ContactProps> = ({ contact }) => {
         <header className='contact-info'>
             <h1 className='contact-name'>{contactName}</h1>
             <div className='contact-location'>{contactLocation}</div>
-            {contact.linkedIn &&
+            {!!contact.linkedIn &&
                 (<div>
-                    <a href={contact.linkedIn} target='_blank' rel='noreferrer'
-                        title={contact.linkedIn === 'https://www.linkedin.com' ? titleTextDefaultLinkedIn : ''}
-                    >
+                    <a href={contact.linkedIn} target='_blank' rel='noreferrer'>
                             LinkedIn
                     </a>
                 </div>
