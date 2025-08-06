@@ -4,7 +4,7 @@ interface SectionHeaderProps {
     name: string;
 }
 
-const SectionHeader: React.FC<SectionHeaderProps> = ({ name }) => {
+const SectionHeader = ({ name } : SectionHeaderProps) => {
     return (
         <>
             <h3 className="section-header">{name}</h3>

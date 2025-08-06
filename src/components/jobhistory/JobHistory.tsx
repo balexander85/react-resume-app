@@ -1,13 +1,6 @@
 import React from 'react';
 import SectionHeader from '../SectionHeader';
-
-export interface Job {
-    title: string;
-    company: string;
-    date: string;
-    location: string;
-    descriptionList?: string[];
-}
+import { Job } from '../../types/types';
 
 interface JobHistoryProps {
     jobs: Job[];
@@ -39,7 +32,7 @@ const JobEntry = (
 
 const JobHistory= ({ jobs } : JobHistoryProps) => {
     return jobs.length > 0 ? (
-        <section>
+        <section data-testid="experience">
             <SectionHeader name={'EXPERIENCE'} />
             {(jobs.map((job, index) => (
                 <JobEntry key={index} { ...job } />))

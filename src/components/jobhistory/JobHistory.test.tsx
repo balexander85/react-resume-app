@@ -1,11 +1,12 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import JobHistory, { Job } from './JobHistory';
+import JobHistory from './JobHistory';
+import { Job } from '../../types/types';
 
 describe('<JobHistory />', () => {
     test('renders null for section header if no jobs', () => {
         render(<JobHistory jobs={[]} />);
-        const sectionHeader = screen.queryByText(/experience/i);
+        const sectionHeader = screen.queryByTestId('experience');
         expect(sectionHeader).toBe(null);
     });
 
@@ -34,6 +35,9 @@ describe('<JobHistory />', () => {
         ];
 
         render(<JobHistory jobs={jobs} />);
+
+        const sectionHeader = screen.queryByTestId('experience');
+        expect(sectionHeader).toBeInTheDocument();
 
         // Adjust the following expectations based on your actual job content
         const jobTitle1 = screen.getByText(/software developer/i);

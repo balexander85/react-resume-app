@@ -1,12 +1,7 @@
 import React from 'react';
 import SectionHeader from '../SectionHeader';
 
-interface Education {
-    degree: string;
-    institution: string;
-    date: string;
-    location: string;
-}
+import { Education } from '../../types/types';
 
 interface EducationProps {
     educationList: Education[];
@@ -25,7 +20,7 @@ const EducationEntry = ({ date, institution, location, degree }: Education) => {
     );
 };
 
-const Education = ({ educationList } : EducationProps) => {
+const EducationComponent = ({ educationList } : EducationProps) => {
     return educationList.length > 0 ? (
         <section data-testid="education" className={'education'}>
             <SectionHeader name={'EDUCATION'} />
@@ -36,4 +31,4 @@ const Education = ({ educationList } : EducationProps) => {
     ) : null;
 };
 
-export default Education;
+export default EducationComponent;

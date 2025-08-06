@@ -2,19 +2,23 @@ import React from 'react';
 import './App.css';
 import Summary from './components/summary/Summary';
 import JobHistory from './components/jobhistory/JobHistory';
-import Education from './components/education/Education';
+import EducationComponent from './components/education/Education';
 import Skills from './components/skills/Skills';
-import candidate from './candidate.json';
 import ContactHeader from './components/contact/Contact';
 
+import candidateData from './candidate.json';
+import { Candidate } from './types/types';
+
 function App() {
+    const candidate: Candidate = candidateData;
+
     return (
         <main className='App'>
-            <ContactHeader contact={candidate.contact} />
+            <ContactHeader {...candidate.contact} />
             <Summary summaryList={candidate.summary} />
-            <JobHistory jobs={candidate.history} />
-            <Education educationList={candidate.education} />
-            <Skills skillsList={candidate.skills} />
+            {candidate.history && <JobHistory jobs={candidate.history} />}
+            {candidate.education && <EducationComponent educationList={candidate.education}/>}
+            {candidate.skills && <Skills skillsList={candidate.skills}/>}
         </main>
     );
 }
