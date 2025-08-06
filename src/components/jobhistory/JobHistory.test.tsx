@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import JobHistory, { Job } from './JobHistory';
 
-describe('JobHistory component', () => {
+describe('<JobHistory />', () => {
     test('renders null for section header if no jobs', () => {
         render(<JobHistory jobs={[]} />);
         const sectionHeader = screen.queryByText(/experience/i);

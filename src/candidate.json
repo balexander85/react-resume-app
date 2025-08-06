@@ -51,7 +51,14 @@
       ]
     }
   ],
-  "education": [],
+  "education": [
+    {
+      "degree": "Degree or Certificate Name",
+      "institution": "Institution Name",
+      "date": "Month YYYY - Month YYYY",
+      "location": "Institution Location"
+    }
+  ],
   "skills": [
     {
       "type": "Type of skill",
