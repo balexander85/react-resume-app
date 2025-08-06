@@ -2,6 +2,18 @@
 
 Welcome to the react-resume-app! This application is designed to showcase your résumé in a clean and professional format using React. [Example Site](https://balexander85.github.io/react-resume-app)
 
+Desktop Example
+
+<img src="./example_desktop.png" width="600" alt="Desktop Example">
+
+Mobile Example
+
+<img src="./example_mobile.png" height="200" alt="Mobile Example">
+
+Print Out Example
+
+<img src="./example_print.png" width="612" alt="Print Out Example">
+
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Prerequisites
