@@ -14,7 +14,7 @@ const ContactHeader = ({ name, location, linkedIn } : Contact) => {
             <h1 className='contact-name'>{contactName}</h1>
             <div className='contact-location'>{contactLocation}</div>
             {!!linkedIn &&
-                (<div>
+                (<div className={'no-print'}>
                     <a href={linkedIn} target='_blank' rel='noreferrer'>
                             LinkedIn
                     </a>

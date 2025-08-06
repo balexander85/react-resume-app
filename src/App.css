@@ -88,3 +88,9 @@ ul {
         font-size: 1.5rem;
     }
 }
+
+@media print {
+    .no-print {
+        display: none !important; /* Use !important to ensure override */
+    }
+}
