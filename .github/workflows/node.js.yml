@@ -32,7 +32,7 @@ jobs:
     - name: Build app
       run: npm run build --if-present
 
-  deploy:
+  deploy-to-gh-pages:
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
