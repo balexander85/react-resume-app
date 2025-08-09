@@ -17,7 +17,7 @@ export interface Job {
   company: string;
   date: string;
   location: string;
-  descriptionList?: string[];
+  descriptionList: string[];
 }
 
 export interface Skill {

@@ -2,3 +2,4 @@ build/
 .gitignore
 .idea/
 node_modules/
+.aider*
