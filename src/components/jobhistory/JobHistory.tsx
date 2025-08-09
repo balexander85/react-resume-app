@@ -39,12 +39,15 @@ const groupJobs = (jobs: Job[]): Job[][] => {
 };
 
 const JobDescription = ({ descriptionList }: JobDescriptionProps) => {
-    if (!descriptionList) return null;
+    if (!descriptionList || descriptionList.length === 0) return null;
 
     return descriptionList.length > 0
         ? descriptionList.length === 1
             ? <div className={'job-entry-description'}>{descriptionList[0]}</div>
-            : <ul>{descriptionList.map((description, index) => <li key={index}>{description}</li>)}</ul>
+            :
+            <div>
+                <ul>{descriptionList.map((description, index) => <li key={index}>{description}</li>)}</ul>
+            </div>
         : null;
 };
 
