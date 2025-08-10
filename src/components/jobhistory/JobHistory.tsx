@@ -54,12 +54,10 @@ const JobDescription = ({ descriptionList }: JobDescriptionProps) => {
 const JobEntry = ({ job, showCompany }: JobEntryProps) => {
     return (
         <div>
-            <div className='job-header'>
-                <p>{job.date}</p>
-                {showCompany && <p className="bold">{job.company}</p>}
-                <p>{job.location}</p>
-            </div>
-            <p className='bold'>{job.title}</p>
+            {showCompany && <div className={'company-name'}>{job.company}</div>}
+            <div className={'job-title'}>{job.title}</div>
+            <div className={'date-range'}>{job.date}</div>
+            <div className={'job-location'}>{job.location}</div>
             <JobDescription descriptionList={job.descriptionList} />
         </div>
     );
@@ -72,7 +70,7 @@ const JobHistory= ({ jobs } : JobHistoryProps) => {
         <section data-testid="experience">
             <SectionHeader name={'EXPERIENCE'} />
             {parsedJobs.map((group: Job[], groupIndex: number) => (
-                <div key={groupIndex}>
+                <div className={'company-section'} key={groupIndex}>
                     {/* Display Company Name (only for the first job in the group) */}
                     {group.map((job: Job, jobIndex: number) => (
                         jobIndex === 0 ? (
@@ -81,6 +79,8 @@ const JobHistory= ({ jobs } : JobHistoryProps) => {
                             <JobEntry key={jobIndex} job={job} showCompany={false} />
                         )
                     ))}
+                    {parsedJobs.length != groupIndex + 1 &&
+                      <hr className={'company-divider'} />}
                 </div>
             ))}
         </section>

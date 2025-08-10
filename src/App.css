@@ -4,10 +4,6 @@ body {
     background-image: url('../public/macfullscreenapbg.png');
 }
 
-ul {
-    list-style-type: square;
-}
-
 .bold {
     font-weight: bold;
 }
@@ -35,6 +31,7 @@ ul {
 .section-header {
     font-family: 'Courier New', ui-rounded;
     font-size: 1.17em;
+    margin-bottom: 0.25em;
 }
 
 .section-divider {
@@ -48,7 +45,6 @@ ul {
 }
 
 .education {
-    display: flex;
     flex-direction: column;
 }
 
@@ -57,14 +53,43 @@ ul {
     justify-content: space-between;
 }
 
+.company-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.company-section {
+    margin-bottom: 1em;
+}
+
+.company-divider {
+    border-top: solid 1px #aaaaaa !important;
+    background: transparent;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.job-title {
+    font-weight: bold;
+    text-indent: 0.5em;
+}
+
 .job-description {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.job-header {
-    display: flex;
-    justify-content: space-between;
+.job-location {
+    font-size: 0.9em;
+    color: #777;
+    text-indent: 0.5em;
+}
+
+.date-range {
+    font-size: 0.9em;
+    color: #777;
+    text-indent: 0.5em;
 }
 
 /* Mobile-specific styles */
