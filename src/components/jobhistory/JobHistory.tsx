@@ -43,7 +43,7 @@ const JobDescription = ({ descriptionList }: JobDescriptionProps) => {
 
     return descriptionList.length > 0
         ? descriptionList.length === 1
-            ? <div className={'job-entry-description'}>{descriptionList[0]}</div>
+            ? <div className={'job-description'}>{descriptionList[0]}</div>
             :
             <div>
                 <ul>{descriptionList.map((description, index) => <li key={index}>{description}</li>)}</ul>
@@ -53,7 +53,7 @@ const JobDescription = ({ descriptionList }: JobDescriptionProps) => {
 
 const JobEntry = ({ job, showCompany }: JobEntryProps) => {
     return (
-        <div className='job-entry'>
+        <div>
             <div className='job-header'>
                 <p>{job.date}</p>
                 {showCompany && <p className="bold">{job.company}</p>}

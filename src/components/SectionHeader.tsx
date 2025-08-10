@@ -7,8 +7,8 @@ interface SectionHeaderProps {
 const SectionHeader = ({ name } : SectionHeaderProps) => {
     return (
         <>
-            <h3 className="section-header">{name}</h3>
-            <hr />
+            <h3 className={'section-header'}>{name}</h3>
+            <hr className={'section-divider'}/>
         </>
     );
 };

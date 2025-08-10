@@ -4,12 +4,6 @@ body {
     background-image: url('../public/macfullscreenapbg.png');
 }
 
-hr {
-    border-top: solid 1px #aaaaaa !important;
-    background: transparent;
-    width: 100%;
-}
-
 ul {
     list-style-type: square;
 }
@@ -43,6 +37,12 @@ ul {
     font-size: 1.17em;
 }
 
+.section-divider {
+    border-top: solid 1px #aaaaaa !important;
+    background: transparent;
+    width: 100%;
+}
+
 .summary-text {
     text-indent: 1em;
 }
@@ -57,12 +57,7 @@ ul {
     justify-content: space-between;
 }
 
-.job-entry {
-    display: flex;
-    flex-direction: column;
-}
-
-.job-entry-description {
+.job-description {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -90,7 +85,7 @@ ul {
 }
 
 @media print {
-    .no-print {
-        display: none !important; /* Use !important to ensure override */
+    a::after {
+        content: ' (' attr(href) ')'; /* Displays the URL itself */
     }
 }
