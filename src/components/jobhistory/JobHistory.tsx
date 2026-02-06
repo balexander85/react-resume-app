@@ -8,7 +8,6 @@ interface JobHistoryProps {
 
 interface JobEntryProps {
     job: Job;
-    showCompany: boolean;
 }
 
 interface JobDescriptionProps {
@@ -51,10 +50,10 @@ const JobDescription = ({ descriptionList }: JobDescriptionProps) => {
         : null;
 };
 
-const JobEntry = ({ job, showCompany }: JobEntryProps) => {
+const JobEntry = ({ job }: JobEntryProps) => {
     return (
         <div>
-            {showCompany && <div className={'company-name'}>{job.company}</div>}
+            <div className={'company-name'}>{job.company}</div>
             <div className={'job-title'}>{job.title}</div>
             <div className={'date-range'}>{job.date}</div>
             <div className={'job-location'}>{job.location}</div>
@@ -71,13 +70,8 @@ const JobHistory= ({ jobs } : JobHistoryProps) => {
             <SectionHeader name={'EXPERIENCE'} />
             {parsedJobs.map((group: Job[], groupIndex: number) => (
                 <div className={'company-section'} key={groupIndex}>
-                    {/* Display Company Name (only for the first job in the group) */}
                     {group.map((job: Job, jobIndex: number) => (
-                        jobIndex === 0 ? (
-                            <JobEntry key={jobIndex} job={job} showCompany={true} />
-                        ) : (
-                            <JobEntry key={jobIndex} job={job} showCompany={false} />
-                        )
+                        <JobEntry key={jobIndex} job={job} />
                     ))}
                     {parsedJobs.length != groupIndex + 1 &&
                       <hr className={'company-divider'} />}

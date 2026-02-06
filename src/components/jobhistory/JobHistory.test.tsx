@@ -63,13 +63,15 @@ describe('<JobHistory />', () => {
         expect(jobDescription1).toBeInTheDocument();
 
         const jobTitle2 = screen.getByText(/senior quality assurance analyst/i);
-        const jobCompany2 = screen.queryByText(/qa inc./i);
+        const jobCompany2 = screen.queryAllByText(/qa inc./i)[0];
+        const jobCompany2Second = screen.queryAllByText(/qa inc./i)[1];
         const jobLocation2 = screen.queryAllByText(/another city, another country/i)[0];
         const jobDate2 = screen.getByText(/july 2019 - december 2021/i);
         const jobDescription2 = screen.queryAllByText(/tested software for bugs and issues/i)[0];
 
         expect(jobTitle2).toBeInTheDocument();
         expect(jobCompany2).toBeInTheDocument();
+        expect(jobCompany2Second).toBeInTheDocument();
         expect(jobLocation2).toBeInTheDocument();
         expect(jobDate2).toBeInTheDocument();
         expect(jobDescription2).toBeInTheDocument();
