@@ -2,6 +2,7 @@
 export interface Contact {
   name: string
   location: string
+  email: string
   linkedIn: string
 }
 
